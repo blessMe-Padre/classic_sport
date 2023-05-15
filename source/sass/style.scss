@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/fontello";
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -13,5 +14,8 @@
 // ---------------------------------
 
 @import "blocks/page";
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/nav";
 
 // ---------------------------------

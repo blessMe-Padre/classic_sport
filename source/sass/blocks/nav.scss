@@ -1,0 +1,27 @@
+.nav {
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+}
+
+.nav li {
+    padding: 10px;
+    transition: background-color $trans-default;
+}
+
+.nav li:hover {
+    background-color: $color-torch-red;
+}
+
+.nav li a {
+    color: $color-default-white;
+    font-size: 18px;
+}
