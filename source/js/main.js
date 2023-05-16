@@ -1,3 +1,9 @@
+import { initMainSlider } from "./module/main-slider";
+import { initNav } from "./module/nav";
+
+
 window.addEventListener('DOMContentLoaded', () => {
- console.log('starts');
+    // Modules
+    initNav();
+    initMainSlider();
 });

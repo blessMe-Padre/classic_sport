@@ -1,0 +1,44 @@
+.main {
+    padding: 35px 0;
+}
+
+.main__slider {
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    min-width: 0; 
+}
+
+.main__item {
+    position: relative;
+    min-width: 0; 
+    max-width: 100%;  
+}
+
+.main__item-text {
+    text-align: center;
+    position: absolute;
+    padding: 15px 0;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    color: $color-default-white;
+    background-color: $color-torch-red;
+}
+
+.main__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
