@@ -1,5 +1,8 @@
 .category-card {
     box-shadow: rgba(34, 60, 80, 0.2) 4px 4px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .category-card__wrapper:hover img {
