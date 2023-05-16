@@ -1,44 +1,92 @@
 .main {
-    padding: 35px 0;
+    padding: 60px 0;
 }
 
-.main__slider {
-    min-width: 0;
-    width: 100%;
-    overflow: hidden;
+.main__wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    
+    @include vp-767 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+     }
 }
 
 .main__list {
     position: relative;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: flex-start;
     list-style: none;
-    width: 100%;
-    min-width: 0; 
+    max-width: 200px;
+
+    @include vp-767 {
+       display: none;
+    }
 }
 
-.main__item {
-    position: relative;
-    min-width: 0; 
-    max-width: 100%;  
+.main__list li {
+    padding: 5px 10px;
 }
 
-.main__item-text {
-    text-align: center;
+.main__list a {
+    display: block;
+    font-weight: 600;
+}
+
+.main__sub-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     position: absolute;
-    padding: 15px 0;
-    bottom: 10%;
-    left: 0;
-    width: 100%;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main__sub-list li {
+    position: relative;
+}
+
+.main__sub-list .main__sub-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all 0.3s ease;
+}
+
+.main__list li:hover {
+    background-color: $color-spruce;
+}
+
+.main__list li:hover a {
     color: $color-default-white;
-    background-color: $color-torch-red;
 }
 
-.main__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.main__list li:hover > .main__sub-list {
+    transform: rotateX(0);
+    opacity:1;
+    visibility: visible;
+    background-color: $color-spruce;
+    color: $color-default-white;
 }
 
+.main__content-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+
+    
+    @include vp-767 {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+     }
+}

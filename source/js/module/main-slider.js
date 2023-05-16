@@ -1,11 +1,12 @@
 const initMainSlider = () => {
-    const sliderWhom = document.querySelector('.main__slider');
+    const sliderPopular = document.querySelector('.popular__slider');
   
-    if (sliderWhom) {
-        let swiper = new Swiper(sliderWhom, {
+    if (sliderPopular) {
+        let swiper = new Swiper(sliderPopular, {
           loop: true,
           spaceBetween: 20,
           init: true,
+          slidesPerView: 1,
           breakpoints: {
             425: {
               slidesPerView: 1.5,

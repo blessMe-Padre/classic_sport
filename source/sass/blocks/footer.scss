@@ -1,0 +1,43 @@
+.footer {
+    padding: 40px 0;
+    background-color: $color-spruce;
+    color: $color-default-white;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    @include vp-767 {
+        display: block;
+    }
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__item {
+    margin-bottom: 15px;
+}
+
+.footer__item a {
+    color: $color-default-white;
+}
+
+.footer__social {
+    margin-top: 30px;
+}
+
+.footer__social a {
+    font-size: 32px;
+    color: $color-default-white;
+}
+
+.footer__text {
+    font-size: 18px;
+}
