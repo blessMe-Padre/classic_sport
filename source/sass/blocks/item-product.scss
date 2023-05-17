@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 56% 40%;
     gap: 35px;
+
+    @include vp-1279 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .item-product__title {
@@ -60,5 +64,6 @@
 
     td {
         width: 50%;
+        padding-right: 15px;
     }
 }
