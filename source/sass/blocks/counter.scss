@@ -1,0 +1,38 @@
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    width: 153px;
+}
+
+.counter__input {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.counter__btn {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+}
+
+.counter__btn:disabled {
+    opacity: 0.2;
+}
+
+.counter__btn--minus {
+    background: url('../img/svg/icon-minus.svg') no-repeat center;
+}
+
+.counter__btn--plus {
+    background: url('../img/svg/icon-plus.svg') no-repeat center;
+}

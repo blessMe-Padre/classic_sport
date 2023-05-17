@@ -4,6 +4,9 @@
 @import "vendor/normalize";
 @import "vendor/fontello";
 @import "vendor/swiper";
+@import "vendor/baguetteBox.min.css";
+@import "vendor/custom-select";
+
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -23,8 +26,12 @@
 @import "blocks/popular";
 @import "blocks/main";
 @import "blocks/category-card";
+@import "blocks/product-card";
 @import "blocks/social";
 @import "blocks/footer";
-@import "blocks/contact"
+@import "blocks/contact";
+@import "blocks/item-product";
+@import "blocks/product-gallery";
+@import "blocks/counter";
 
 // ---------------------------------

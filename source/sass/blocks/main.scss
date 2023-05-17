@@ -6,11 +6,11 @@
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 30px;
-    
+
     @include vp-767 {
         grid-template-columns: 1fr;
         gap: 40px;
-     }
+    }
 }
 
 .main__list {
@@ -21,7 +21,7 @@
     max-width: 200px;
 
     @include vp-767 {
-       display: none;
+        display: none;
     }
 }
 
@@ -69,9 +69,9 @@
     color: $color-default-white;
 }
 
-.main__list li:hover > .main__sub-list {
+.main__list li:hover>.main__sub-list {
     transform: rotateX(0);
-    opacity:1;
+    opacity: 1;
     visibility: visible;
     background-color: $color-spruce;
     color: $color-default-white;
@@ -82,11 +82,10 @@
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
     gap: 30px;
 
-    
     @include vp-767 {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-     }
+    }
 }
