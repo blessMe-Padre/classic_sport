@@ -68,7 +68,13 @@
     font-size: 18px;
 }
 
+.header__link a:hover {
+    color: red;
+}
+
+
 .header__cart {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +82,10 @@
     min-width: 130px;
     background-color: $color-torch-red;
     margin: 0 0 20px 0;
+}
+
+.header__cart:hover .cart-popup {
+    display: block;
 }
 
 .header__cart a {

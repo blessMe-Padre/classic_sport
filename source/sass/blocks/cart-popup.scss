@@ -1,0 +1,19 @@
+.cart-popup {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    min-width: 300px;
+    min-height: 50px;
+    padding: 10px;
+    background-color: $color-glacier;
+    display: none;
+}
+
+.cart-popup p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.cart-popup:hover {
+    display: block;
+}

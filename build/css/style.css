@@ -1936,7 +1936,12 @@ button,
   font-size: 18px;
 }
 
+.header__link a:hover {
+  color: red;
+}
+
 .header__cart {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1950,6 +1955,10 @@ button,
   min-width: 130px;
   background-color: #ff1553;
   margin: 0 0 20px 0;
+}
+
+.header__cart:hover .cart-popup {
+  display: block;
 }
 
 .header__cart a {
@@ -2531,6 +2540,26 @@ button,
 
 .counter__btn--plus {
   background: url("../img/svg/icon-plus.svg") no-repeat center;
+}
+
+.cart-popup {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  min-width: 300px;
+  min-height: 50px;
+  padding: 10px;
+  background-color: #729fc8;
+  display: none;
+}
+
+.cart-popup p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.cart-popup:hover {
+  display: block;
 }
 
 @media (max-width: 1439px) {
