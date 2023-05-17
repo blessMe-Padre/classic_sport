@@ -3,10 +3,16 @@
     grid-template-columns: 56% 40%;
     gap: 35px;
 
-    @include vp-1279 {
+    @include vp-1023 {
         grid-template-columns: 1fr;
     }
 }
+
+// .item-product__card {
+//     @include vp-1023 {
+//         order: 2;
+//     }
+// }
 
 .item-product__title {
     font-size: 28px;
