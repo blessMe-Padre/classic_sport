@@ -6,3 +6,11 @@
     font-size: 32px;
     color: $color-default-white;
 }
+
+.social i {
+    transition: opacity $trans-default;
+}
+
+.social i:hover {
+    opacity: 0.8;
+}

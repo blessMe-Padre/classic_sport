@@ -1,8 +1,8 @@
 import { initCounter } from "./module/counter";
+import { initGallery } from "./module/gallery";
 import { initMainSlider } from "./module/main-slider";
 import { initNav } from "./module/nav";
 import { CustomSelect } from './select/custom-select';
-
 
 window.addEventListener('DOMContentLoaded', () => {
     // Modules
@@ -12,7 +12,5 @@ window.addEventListener('DOMContentLoaded', () => {
     //custom select
     const select = new CustomSelect();
     select.init();
-
-    // baguetteBox
-    baguetteBox.run('.product-gallery');
+    initGallery();
 });
